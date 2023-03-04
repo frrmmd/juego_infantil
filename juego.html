@@ -24,8 +24,14 @@
     
 
 <script>
+    var puntaje= 0;
     var canvas = document.getElementById("lienzo");
     var lienzo = canvas.getContext("2d");
+
+    lienzo.fillStyle = "blue";
+	lienzo.clearRect(0, 0, canvas.width, 20);
+	lienzo.font = "bold 12px Courier";
+	lienzo.fillText("SCORE: " + puntaje, 10, 20);
 
     // se crea el array con las imagenes con su posicion predeterminada 
     var images = [
@@ -155,6 +161,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -180,6 +192,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
@@ -199,6 +217,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -224,6 +248,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
@@ -242,6 +272,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -267,6 +303,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
@@ -285,6 +327,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -310,6 +358,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
@@ -328,6 +382,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -353,6 +413,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
@@ -371,6 +437,12 @@ function soltado(e){
             if(images[i-1].x == xAux && images[i-1].y == yAux){ // cuando las coordenadas coincidan, entonces entramos
                 if(id==images[i-1].nom){ //y comparamos si la etiqueta puesta es correcto respecto a la imagen
                     //puntos++;
+                    puntaje +=100;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+
                     console.log("Correcto");
                     console.log(id);
                     console.log(images[i-1].nom);
@@ -396,6 +468,12 @@ function soltado(e){
                     }
                 }
                 else{
+                    puntaje -=50;
+                    lienzo.fillStyle = "blue";
+                    lienzo.clearRect(0, 0, canvas.width, 20);
+                    lienzo.font = "bold 12px Courier";
+                    lienzo.fillText("SCORE: " + puntaje, 10, 20);
+                    
                     console.log("Incorrecto");
                     var audio = new Audio('sfx/error.mp3');
                     audio.play();
