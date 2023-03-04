@@ -1,0 +1,6 @@
+#lienzo{
+    background-image: url('../img/background_juego.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px 700px;
+    background-position: center;
+}
